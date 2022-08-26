@@ -7,4 +7,4 @@ gramma = luoti * 13.3
 kilo = floor(gramma / 1000)
 
 print("Massa nykymittojen mukaan: ")
-print("{} kilogrammaa ja {:.2f} grammaa.".format(kilo, gramma % 1000))
+print(f"{kilo} kilogrammaa ja {gramma % 1000:.2f} grammaa.")
