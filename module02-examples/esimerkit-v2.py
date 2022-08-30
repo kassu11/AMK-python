@@ -13,3 +13,7 @@ print(f"{r} (m) säteisen pinta-ala on {area} neliömetriä")
 
 
 print(random.randint(10, 20))
+
+
+for i in range(1):
+  print(i)
