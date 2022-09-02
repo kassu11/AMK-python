@@ -6,7 +6,7 @@ maxValue = None
 
 while True:
   numeroString = input("Anna numero: ")
-  if len(numeroString) == 0: break
+  if numeroString == "": break
 
   numeroInt = int(numeroString)
   if minValue == None or minValue > numeroInt:

@@ -9,3 +9,12 @@ if True:
   numero = 100
 
 print(numero)
+
+test = """
+asdasd
+
+asdasd
+a
+asdasd"""
+
+print(test)

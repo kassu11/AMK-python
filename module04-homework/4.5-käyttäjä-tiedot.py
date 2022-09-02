@@ -6,12 +6,14 @@
 
 yrityksia_jaljella = 5
 
-while yrityksia_jaljella > 0:
+while yrityksia_jaljella:
   kayttaja = input("Kirjaudu sisään: ")
   salasana = input("Anna salasana: ")
   if kayttaja == "python" and salasana == "rules":
     print("Tervetuloa!")
     break
-  else:
-    yrityksia_jaljella -= 1
-    print(f"Käyttäjätunnus tai salasana on väärin. Yritä uudelleen ({yrityksia_jaljella} yritystä jäljellä)")
+  
+  yrityksia_jaljella -= 1
+  print(f"Käyttäjätunnus tai salasana on väärin. Yritä uudelleen ({yrityksia_jaljella} yritystä jäljellä)")
+else:
+  print("Pääsy evätty")
