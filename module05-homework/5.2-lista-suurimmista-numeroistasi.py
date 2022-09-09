@@ -7,9 +7,7 @@ listOfNumbers = []
 while True:
   userInput = input("Kirjoita luku tai tyhjä merkkijono lopettaaksesi: ")
   if userInput == "": break
-
   listOfNumbers.append(int(userInput))
 
 listOfNumbers.sort(reverse=True)
-
 print(f"Lista 5:tä suurimmasta numerostasi: {listOfNumbers[:5]}")
