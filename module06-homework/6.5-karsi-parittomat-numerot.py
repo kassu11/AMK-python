@@ -11,4 +11,4 @@ for i in range(5):
   numbers = []
   for length in range(5):
     numbers.append(random.randint(1, 100))
-  print(f"\nLista: {numbers} \nSumma: {filterOddNumbers(numbers)}")
+  print(f"\nLista: {numbers} \nParilliset: {filterOddNumbers(numbers)}")
