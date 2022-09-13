@@ -5,17 +5,17 @@
 import math
 
 def calculatePizaPrice(diameter, price):
-  squareCentimeter = diameter / 2 ** 2 * math.pi;
+  squareCentimeter = (diameter / 2) ** 2 * math.pi;
   squareMeter = squareCentimeter / 10000;
   return squareMeter * price
 
 pizas = []
 
-for i in ["A", "B"]:
-  diameter = float(input(f"{i}). Anna pizzan halkaisija senttimetreinä: "))
-  price = float(input(f"{i}). Anna pizzan hinta euroina: "))
+for pizaName in ["A", "B"]:
+  diameter = float(input(f"{pizaName}). Anna pizzan halkaisija senttimetreinä: "))
+  price = float(input(f"{pizaName}). Anna pizzan hinta euroina: "))
   pizas.append(price)
-  print(f"{i}). Yksikköhinta on: {calculatePizaPrice(diameter, price):.2f} €/m2\n")
+  print(f"{pizaName}). Yksikköhinta on: {calculatePizaPrice(diameter, price):.2f} €/m2\n")
 
 if pizas[0] < pizas[1]:
   print("A). pizza on halvempi")
