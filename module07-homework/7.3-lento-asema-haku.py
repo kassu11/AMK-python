@@ -8,6 +8,21 @@
 # Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK. 
 # Löydät koodeja helposti selaimen avulla.)
 
+def search_airport():
+  icao = input("Kirjoita ICAO-koodi: ").upper()
+  if icao in air_ports:
+    print("\n" * 5 + air_ports[icao])
+  else: print("\n" * 5 + "Lentoasemaa ei löytynyt")
+
+def add_airport():
+  icao = input("Kirjoita ICAO-koodi: ").upper()
+  name = input("Kirjoita nimi: ")
+  if icao in air_ports:
+    print("\n" * 5 + "Lentoasema on jo olemassa")
+  else:
+    air_ports[icao] = name
+    print("\n" * 5 + "Lentoasema lisätty")
+
 air_ports = {
   "EFET":	"Enontekiön lentoasema",
   "EFHK":	"Helsinki-Vantaan lentoasema",
@@ -34,20 +49,8 @@ while True:
   print("1). Hae lintokenttä ICAO-koodilla")
   print("2). Lisää lentoasema")
   print("3). Lopeta")
-  user_input = int(input("Kirjoita numero: "))
+  user_input = input("Kirjoita numero: ")
 
-  if user_input == 1:
-    icao = input("Kirjoita ICAO-koodi: ").upper()
-    if icao in air_ports:
-      print("\n" * 5 + air_ports[icao])
-    else: print("\n" * 5 + "Lentoasemaa ei löytynyt")
-  elif user_input == 2:
-    icao = input("Kirjoita ICAO-koodi: ").upper()
-    name = input("Kirjoita nimi: ")
-    if icao in air_ports:
-      print("\n" * 5 + "Lentoasema on jo olemassa")
-    else:
-      air_ports[icao] = name
-      print("\n" * 5 + "Lentoasema lisätty")
-  elif user_input == 3:
-    break
+  if user_input == "1": search_airport()
+  elif user_input == "2": add_airport()
+  else: break
