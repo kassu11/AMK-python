@@ -1,3 +1,6 @@
+# Kirjoita ohjelma, joka kysyy käyttäjältä lentoaseman ICAO-koodin.
+# Ohjelma hakee ja tulostaa koodia vastaavan lentokentän nimen ja sen sijaintikunnan kurssilla käytettävästä lentokenttätietokannasta.
+
 import mysql.connector
 
 connection = mysql.connector.connect(
