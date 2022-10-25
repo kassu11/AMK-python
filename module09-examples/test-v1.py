@@ -32,3 +32,6 @@ print(">", koira1.jalka_maara)
 
 print(koira1.tehty)
 print(koira2.tehty)
+
+lista = [i for i in range(10)]
+print(lista)
