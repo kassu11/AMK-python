@@ -35,3 +35,9 @@ print(koira2.tehty)
 
 lista = [i for i in range(10)]
 print(lista)
+
+print(f'nimi "{koira1.nimi}" '
+      f'rotu "{koira1.rotu}"')
+
+arvo = 199
+print(max(0, min(arvo, 120)))

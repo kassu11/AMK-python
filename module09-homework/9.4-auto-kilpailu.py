@@ -34,7 +34,7 @@ class Auto:
 autot = []
 
 for i in range(10):
-  rekkari = "ABC-" + str(i+1)
+  rekkari = "ABC-" + str(i + 1)
   nopeus_raja = random.randint(100, 200)
   auto = Auto(rekkari, nopeus_raja)
   autot.append(auto)
