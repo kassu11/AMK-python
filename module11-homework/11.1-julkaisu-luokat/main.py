@@ -6,7 +6,6 @@
 # Luo pääohjelmassa julkaisut Aku Ankka (päätoimittaja Aki Hyyppä) ja Hytti n:o 6 (kirjailija Rosa Liksom, 200 sivua). 
 # Tulosta molempien julkaisujen kaikki tiedot toteuttamiesi metodien avulla.
 
-from publication import Publication
 from magazine import Magazine
 from book import Book
 
